@@ -3,7 +3,10 @@ name: Update Exchange Rates Daily
 on:
   schedule:
     - cron: "0 6 * * *"  # Runs every day at 06:00 UTC
-  workflow_dispatch:      # Allows manual run
+  workflow_dispatch:     # Allows manual run
+
+permissions:
+  contents: write    # Allows pushing of README update to GitHub
 
 jobs:
   update:
@@ -18,7 +21,7 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests pandas
 
       - name: Run script
         run: python update_rates.py
