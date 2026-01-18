@@ -1,6 +1,6 @@
 # 🇪🇬 EGP Exchange Rates
 
-**Last Updated:** 2026-01-17
+**Last Updated:** 2026-01-18
 
 | Currency | Rate (1 EGP →) | Reverse Rate (1 → X EGP) |
 |---------|----------------|------------------------|
